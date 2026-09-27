@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskmanager_dev
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:Hai@2904@}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+
+jwt:
+  secret: ${JWT_SECRET:dev-secret-change-me-in-production-min-32-chars}
+  access-token-expiration: 900000
+  refresh-token-expiration: 604800000
