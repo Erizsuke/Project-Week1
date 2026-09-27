@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/taskmanager_dev
     username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:Hai@2904@}
+    password: ${DB_PASSWORD:postgres}
   jpa:
     hibernate:
       ddl-auto: validate
